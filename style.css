@@ -1,0 +1,10 @@
+.titlebar {
+    background-color: rgb(189, 209, 189);
+    border-radius: 10px;
+}
+
+.container {
+    border: 1px grey solid;
+    border-radius: 10px;
+    margin-top: 15px;
+}
