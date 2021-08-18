@@ -1,40 +1,78 @@
+html, body {
+    height: 100%;
+  }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .blockcolour {
     background-color: slategrey;
+    border-color: darkslategrey;
 }
 
 .titlebar {
     border-radius: 10px;
-    border: 1px grey solid;
     margin-top: 15px;
     text-align: center;
     font-size: x-large;
     font-weight: 300;
 }
 
+.nav {
+    display: inline-flex;
+    text-align: start;
+    font-size: 15px;
+    padding-right: 50px;
+}
+
+
+
 .mainblock {
-    border: 1px grey solid;
     border-radius: 15px;
     margin-top: 15px;
+    margin-bottom: 10px;
     padding: 30px;
     color: snow;
     font-weight: 400;
+    flex: 1 0 auto;
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
-  height: 60px; /* Set the fixed height of the footer here */
+  height: 40px; /* Set the fixed height of the footer here */
   line-height: 60px; /* Vertically center the text there */
   text-align: center;
-  /* background-color: #f5f5f5; */
+  flex-shrink: 0;
+}
+
+header {
+    padding: 20px;
+}
+
+h1 {
+    font-size: larger;
 }
 
 a {
     color: rgb(28, 29, 36);
     font-weight: 550;
+}
+
+hr.rounded {
+    border-top: 8px solid rgb(80, 80, 80);
+    border-radius: 5px;
+  }
+
+img {
+    border: 2px darkslategrey solid;
+    margin: 10px;
+    width: 50%;
+    position:relative;
+    left: 25%;
+    right: auto;
 }
