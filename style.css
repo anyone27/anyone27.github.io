@@ -1,26 +1,27 @@
-.rounded {
-    border: 1px grey solid;
-    border-radius: 15;
-    margin-top: 15px;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 200;
-    background-color: mintcream;
+}
+
+.blockcolour {
+    background-color: slategrey;
 }
 
 .titlebar {
-    background-color: rgba(226, 243, 225, 0.979);
     border-radius: 10px;
+    border: 1px grey solid;
+    margin-top: 15px;
     text-align: center;
     font-size: x-large;
     font-weight: 300;
 }
 
 .mainblock {
-    background-color: white;
-
+    border: 1px grey solid;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 30px;
+    color: snow;
+    font-weight: 400;
 }
 
 .footer {
@@ -31,4 +32,9 @@ body {
   line-height: 60px; /* Vertically center the text there */
   text-align: center;
   /* background-color: #f5f5f5; */
+}
+
+a {
+    color: rgb(28, 29, 36);
+    font-weight: 550;
 }
