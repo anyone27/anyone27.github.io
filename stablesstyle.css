@@ -4,29 +4,65 @@ body {
 }
 
 header {
-    background-color: blue;
+    background-image: url("static/pexels-pixabay-158636.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position-y: bottom;
     text-align: center;
-    max-height: 20%;
+    height: 50vh;
+}
+
+.logo {
+    font-size:75pt;
+    font-family:cursive;
+    color: darkslategray;
+    text-shadow: 1px 1.5px lightgray;
+    line-height: 8;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    background-color: blanchedalmond;
+    }
+
+.menu {
+    display: inline;
+    padding: 20px;
+    line-height: 5;
+    
+}
+
+.menu a {
+    color: darkolivegreen;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline black;
 }
 
 section {
-    background-color: red;
     text-align: center;
 }
 
 .col-2 {
     display:flex;
-    flex-flow: row wrap;
+    margin: 10px;
 }
 
 .col-2 div{
-    flex: 1;
-    background-color: grey;
-    border: 1px black solid;
+    flex: 1 0 50%;
+    padding: 10px;
+    height: 120vh;
+    margin: 10px;
 }
 
 footer {
-    background-color: green;
+    background-color: mintcream;
+    width: 100%;
+    position: sticky;
     /* Set the fixed height of the footer here */
     height: 10vh; 
     /* Vertically center the text there */
