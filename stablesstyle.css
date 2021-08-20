@@ -1,0 +1,35 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    background-color: blue;
+    text-align: center;
+    max-height: 20%;
+}
+
+section {
+    background-color: red;
+    text-align: center;
+}
+
+.col-2 {
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.col-2 div{
+    flex: 1;
+    background-color: grey;
+    border: 1px black solid;
+}
+
+footer {
+    background-color: green;
+    /* Set the fixed height of the footer here */
+    height: 10vh; 
+    /* Vertically center the text there */
+    line-height: 1.5;
+    text-align: center;
+  }
