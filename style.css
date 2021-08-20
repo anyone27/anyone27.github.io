@@ -28,6 +28,14 @@ body {
     padding-right: 50px;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 
 
 .mainblock {
@@ -64,15 +72,24 @@ a {
 }
 
 hr.rounded {
-    border-top: 8px solid rgb(80, 80, 80);
+    border-top: 6px solid black;
     border-radius: 5px;
   }
 
+  .images {
+    display: flex;
+
+  }
+ 
+figure {
+    margin: 10px;
+    position:relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 img {
     border: 2px darkslategrey solid;
-    margin: 10px;
-    width: 50%;
-    position:relative;
-    left: 25%;
-    right: auto;
+    width: 100%;
+    position: relative;
 }
