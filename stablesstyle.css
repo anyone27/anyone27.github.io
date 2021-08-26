@@ -1,70 +1,135 @@
+/* BODY */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 100vh;
 }
+
+/* Header */
 
 header {
     background-image: url("static/pexels-pixabay-158636.jpg");
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position-y: bottom;
-    text-align: center;
-    height: 50vh;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    /* height: 50vh; */
 }
 
 .logo {
-    font-size:75pt;
+    font-size:15vw;
     font-family:cursive;
     color: darkslategray;
     text-shadow: 1px 1.5px lightgray;
-    line-height: 8;
+    line-height: 50vh;
 }
+
+/* NAV */
 
 .nav {
     position: sticky;
     top: 0;
-    height: 10vh;
+    /* height: 10vh; */
     background-color: blanchedalmond;
+    display: flex;
+    justify-content:safe center;
     }
 
 .menu {
     display: inline;
-    padding: 20px;
-    line-height: 5;
-    
+    padding-inline: 1vw;
+    line-height: 3.5;
+    font-size: 15pt;
 }
 
 .menu a {
     color: darkolivegreen;
     text-decoration: none;
+    font-size: 15pt;
 }
 
 .menu a:hover {
-    text-decoration: underline black;
+    text-decoration: underline grey;
 }
 
-section {
+/* MAIN 2 COLUMN */
+
+section.col-2 {
     text-align: center;
-}
-
-.col-2 {
     display:flex;
-    margin: 10px;
+    margin: 2vw;
+    padding: 2%;
+    /* max-width: 90vw; */
 }
 
 .col-2 div{
     flex: 1 0 50%;
-    padding: 10px;
-    height: 120vh;
-    margin: 10px;
+    padding: 20px;
 }
+
+.left {
+    line-height: 2.5;
+    
+    /* border: 1px solid grey; */
+}
+
+/* .right {
+    max-width: 35vw;
+} */
+
+.column {
+    border: 1px solid grey;
+    justify-content: center;
+}
+
+img {
+    width: 300px;
+}
+
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 500px) {
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        position: relative
+    }
+    .logo {
+        line-height: 15vh;
+    }
+    section.col-2 {
+        flex-direction: column;
+    }   
+    .col-2 div{
+        padding: 10px;
+        flex-grow: 1;
+    }
+    img {
+        /* width: 60vw; */
+    }
+}
+
+
+/* FOOTER */
 
 footer {
     background-color: mintcream;
     width: 100%;
     position: sticky;
     /* Set the fixed height of the footer here */
-    height: 10vh; 
+    min-height: 10vh; 
     /* Vertically center the text there */
     line-height: 1.5;
     text-align: center;
