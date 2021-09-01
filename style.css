@@ -76,17 +76,21 @@ hr.rounded {
     border-radius: 5px;
   }
 
-  .images {
-    display: flex;
 
-  }
  
-figure {
+.flexbox {
+    /* width: 1000px; */
     margin: 10px;
-    position:relative;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
 }
+
+figure {
+    flex: 1 1 500px;
+    padding: 20px;
+  }
 
 img {
     border: 2px darkslategrey solid;
