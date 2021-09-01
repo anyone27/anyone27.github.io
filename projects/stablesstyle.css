@@ -7,7 +7,7 @@ body {
 /* Header */
 
 header {
-    background-image: url("static/pexels-pixabay-158636.jpg");
+    background-image: url("/anyone27.github.io/static/pexels-pixabay-158636.jpg");
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position-y: bottom;
@@ -18,7 +18,7 @@ header {
 }
 
 .logo {
-    font-size:15vw;
+    font-size:300px;
     font-family:cursive;
     color: darkslategray;
     text-shadow: 1px 1.5px lightgray;
@@ -107,6 +107,7 @@ img {
         position: relative
     }
     .logo {
+        font-size: 80px;
         line-height: 15vh;
     }
     section.col-2 {
@@ -117,7 +118,7 @@ img {
         flex-grow: 1;
     }
     img {
-        /* width: 60vw; */
+        width: 80vw;
     }
 }
 
