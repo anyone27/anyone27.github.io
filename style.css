@@ -88,16 +88,12 @@ hr.rounded {
     border-top: 6px solid black;
     border-radius: 5px;
   }
-
-
  
 .flexbox {
-    /* width: 1000px; */
     margin: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
 }
 
 figure {
