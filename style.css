@@ -49,8 +49,6 @@ a:hover {
     color:aliceblue;
 }
 
-
-
 .mainblock {
     border-radius: 15px;
     margin-top: 15px;
@@ -111,7 +109,11 @@ img {
     display: flex;
 }
 
-.project  img {
+.project  div {
+    padding: 20px;
+}
+
+.project img {
     max-width: 500px;
 }
 
@@ -120,7 +122,7 @@ img {
         flex-direction: column;
     }
 
-    .project > img {
+    .project img {
         width: 80vw;
     }
 }

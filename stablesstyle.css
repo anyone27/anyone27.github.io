@@ -2,12 +2,15 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Header */
 
 header {
-    background-image: url("/anyone27.github.io/static/pexels-pixabay-158636.jpg");
+    background-image: url("static/pexels-pixabay-158636.jpg");
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position-y: bottom;
@@ -30,10 +33,9 @@ header {
 .nav {
     position: sticky;
     top: 0;
-    /* height: 10vh; */
     background-color: blanchedalmond;
     display: flex;
-    justify-content:safe center;
+    justify-content:center;
     }
 
 .menu {
@@ -55,52 +57,43 @@ header {
 
 /* MAIN 2 COLUMN */
 
-section.col-2 {
+.col-2 {
     text-align: center;
     display:flex;
-    margin: 2vw;
-    padding: 2%;
-    /* max-width: 90vw; */
+    width: 90vw;
+    margin: 20px;
+    justify-content: center;
 }
 
 .col-2 div{
-    flex: 1 0 50%;
     padding: 20px;
 }
 
 .left {
     line-height: 2.5;
-    
-    /* border: 1px solid grey; */
 }
 
-/* .right {
-    max-width: 35vw;
-} */
+.right {
+    display: flex;
+    flex-direction: column;
+}
 
 .column {
     border: 1px solid grey;
-    justify-content: center;
 }
 
 img {
     width: 300px;
 }
 
-.top {
+.right-stack {
     display: flex;
-    flex-wrap: wrap;
-    
-}
-
-.bottom {
-    display: flex;
-    flex-wrap: wrap;    
+    justify-content: center;
 }
 
 /* RESPONSIVE DESIGN */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
     .nav{
         flex-direction: column;
         align-items: center;
@@ -110,16 +103,17 @@ img {
         font-size: 80px;
         line-height: 15vh;
     }
-    section.col-2 {
+    .col-2 {
         flex-direction: column;
+        justify-content: center;
     }   
     .col-2 div{
         padding: 10px;
-        flex-grow: 1;
     }
-    img {
-        width: 80vw;
+    .right-stack {
+        flex-wrap: wrap;
     }
+
 }
 
 
