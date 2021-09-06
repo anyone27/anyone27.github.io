@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    background-color: rgb(138, 148, 175);
   }
 
 body {
@@ -8,9 +9,18 @@ body {
     flex-direction: column;
 }
 
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    justify-content: center;
+    border-radius: 10px;
+}
+
 .blockcolour {
-    background-color: slategrey;
-    border-color: darkslategrey;
+    background-color: #00000010;
 }
 
 .titlebar {
@@ -21,11 +31,13 @@ body {
     font-weight: 300;
 }
 
+nav li:hover {
+    background-color: #fdfdfd10;
+}
+
 .nav {
-    display: inline-flex;
-    text-align: start;
     font-size: 15px;
-    padding-right: 50px;
+    width: 20%;
 }
 
 a {
@@ -34,9 +46,8 @@ a {
 
 a:hover {
     text-decoration: underline;
+    color:aliceblue;
 }
-
-
 
 .mainblock {
     border-radius: 15px;
@@ -75,21 +86,43 @@ hr.rounded {
     border-top: 6px solid black;
     border-radius: 5px;
   }
-
-  .images {
-    display: flex;
-
-  }
  
-figure {
+.flexbox {
     margin: 10px;
-    position:relative;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+figure {
+    flex: 1 1 500px;
+    padding: 10px;
+  }
 
 img {
     border: 2px darkslategrey solid;
     width: 100%;
     position: relative;
+}
+
+.project {
+    display: flex;
+}
+
+.project  div {
+    padding: 20px;
+}
+
+.project img {
+    max-width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project img {
+        width: 80vw;
+    }
 }
