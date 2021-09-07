@@ -1,12 +1,24 @@
-/* .wrapper {
+.wrapper {
     display: grid;
-    grid-template-rows: 300px 400px 100px;
-    grid-template-columns: 200px 400px 100px;
-    grid-template-areas: "header header header"
-                         "sidebar main gutter"
-                         "footer footer footer";
+    min-height: 100vh;
+    grid-template-rows:     2fr 10fr 1fr;
+    grid-template-columns:  1fr 5fr;
+    grid-template-areas:    "header header"
+                            "sidebar main"
+                            "footer footer";
     background-color: darkgrey;
     color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        grid-template-rows:     4fr 3fr 10fr 2fr;
+        grid-template-columns:  1fr;
+        grid-template-areas:    "header"
+                                "sidebar"
+                                "main"
+                                "footer";
+    }
 }
 
 .box {
@@ -15,11 +27,13 @@
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
+    text-align: center;
 }
 
 .header {
     grid-area: header;
     background-color: blue;
+    background-image: url(/static/chocolate_cake_above.jpg);
 }
 
 .sidebar {
@@ -35,12 +49,4 @@
 .footer {
     grid-area: footer;
     background-color: darkgreen;
-} */
-
-.grid-container {
-    display: grid;
-  }
-
-  .grid-item {
-      background-color: red;
-  }
+}
