@@ -107,6 +107,7 @@ img {
 
 .project {
     display: flex;
+    padding: 20px;
 }
 
 .project  div {
