@@ -58,13 +58,6 @@ body.dark-theme .blockcolour {
     border-radius: 10px;
     margin-top: 15px;
     text-align: center;
-    font-size: x-large;
-    font-weight: 300;
-}
-
-.nav {
-    font-size: 15px;
-    width: 20%;
 }
 
 nav ul{
@@ -84,10 +77,6 @@ nav li:hover {
 
 header {
     padding: 20px;
-}
-
-h1 {
-    font-size: larger;
 }
 
 hr.rounded {
@@ -146,33 +135,6 @@ body.dark-theme .project a:hover {
 
 body.dark-theme .design a:hover {
     background-color: transparent;
-}
-
-/* PROJECT PAGE */
-
-.project {
-    display: flex;
-    padding: 20px;
-}
-
-.project  div {
-    padding: 10px;
-}
-
-.project img {
-    max-width: 500px;
-}
-
-/* DESIGN PAGE */
-
-figure {
-    flex: 1 1 400px;
-  }
-
-img {
-    width: 100%;
-    border: 1px black solid;
-    position: relative;
 }
 
 /* DARK MODE SWITCH */
